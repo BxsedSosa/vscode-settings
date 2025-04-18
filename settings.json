@@ -1,0 +1,61 @@
+{
+	// VSCode
+	"workbench.colorTheme": "Default Dark+",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.statusBar.visible": false,
+	"workbench.startupEditor": "none",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+
+	// Vim Settings
+	"editor.lineNumbers": "relative",
+	"vim.leader": "<Space>",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// {"before": [], "commands": []},
+		// Switch buffer left or right
+		{ "before": ["<S-h>"], "commands": [":bprevious"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+
+		// Split pane
+		{ "before": ["leader", "v"], "commands": [":vsplit"] },
+		{ "before": ["leader", "s"], "commands": [":split"] },
+
+		// Pane motion
+
+		{
+			"before": ["leader", "h"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		{
+			"before": ["leader", "j"],
+			"commands": ["workbench.action.focusBelowGroup"]
+		},
+		{
+			"before": ["leader", "k"],
+			"commands": ["workbench.action.focusAboveGroup"]
+		},
+		{
+			"before": ["leader", "l"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		}
+	],
+
+	// Tab settings
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false,
+
+	// Formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+
+	"[solidity]": {
+		"editor.defaultFormatter": "JuanBlanco.solidity"
+	},
+
+	"prettier.enable": true,
+	"prettier.useTabs": true,
+	"solidity.telemetry": true,
+	"explorer.confirmDelete": false,
+	"vsicons.dontShowNewVersionMessage": true
+}
