@@ -1,15 +1,7 @@
-{
-	// VSCode
-	"workbench.colorTheme": "Default Dark+",
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.statusBar.visible": false,
-	"workbench.startupEditor": "none",
-	"editor.minimap.enabled": false,
-	"breadcrumbs.enabled": false,
-
-	// Vim Settings
-	"editor.lineNumbers": "relative",
-	"vim.leader": "<Space>",
+[
+		// {"before": [], "commands": []},
+		{ "before": ["j", "j"], "after": ["<esc>"] }
+	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		// {"before": [], "commands": []},
 		// Switch buffer left or right
@@ -21,7 +13,6 @@
 		{ "before": ["leader", "s"], "commands": [":split"] },
 
 		// Pane motion
-
 		{
 			"before": ["leader", "h"],
 			"commands": ["workbench.action.focusLeftGroup"]
@@ -37,6 +28,11 @@
 		{
 			"before": ["leader", "l"],
 			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		// Comment line
+		{
+			"before": ["leader", "/"],
+			"commands": ["editor.action.commentLine"]
 		}
 	],
 
@@ -57,5 +53,8 @@
 	"prettier.useTabs": true,
 	"solidity.telemetry": true,
 	"explorer.confirmDelete": false,
-	"vsicons.dontShowNewVersionMessage": true
+	"vsicons.dontShowNewVersionMessage": true,
+	"chat.commandCenter.enabled": false,
+	"terminal.integrated.defaultProfile.linux": "",
+	"terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)"
 }
