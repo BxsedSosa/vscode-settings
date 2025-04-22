@@ -1,4 +1,16 @@
-[
+{
+	// VSCode
+	"workbench.colorTheme": "Default Dark+",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.statusBar.visible": false,
+	"workbench.startupEditor": "none",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+
+	// Vim Settings
+	"editor.lineNumbers": "relative",
+	"vim.leader": "<Space>",
+	"vim.insertModeKeyBindings": [
 		// {"before": [], "commands": []},
 		{ "before": ["j", "j"], "after": ["<esc>"] }
 	],
@@ -44,17 +56,21 @@
 	// Formatter
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
 
 	"[solidity]": {
 		"editor.defaultFormatter": "JuanBlanco.solidity"
 	},
 
 	"prettier.enable": true,
-	"prettier.useTabs": true,
 	"solidity.telemetry": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
 	"explorer.confirmDelete": false,
 	"vsicons.dontShowNewVersionMessage": true,
 	"chat.commandCenter.enabled": false,
 	"terminal.integrated.defaultProfile.linux": "",
-	"terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)"
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "reactSnippets.settings.importReactOnTop": false
 }
